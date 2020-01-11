@@ -42,5 +42,6 @@ the error.
 
 ### Credits
 
-* The fix was inspired by the documentation of [x11docker](https://github.com/mviereck/x11docker)
-  https://github.com/mviereck/x11docker/wiki/How-to-connect-container-to-DBus-from-host
+The fix was inspired by the documentation of [x11docker](https://github.com/mviereck/x11docker)
+
+*  https://github.com/mviereck/x11docker/wiki/How-to-connect-container-to-DBus-from-host
