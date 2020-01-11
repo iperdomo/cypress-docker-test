@@ -33,3 +33,14 @@ Fontconfig warning: "/etc/fonts/fonts.conf", line 100: unknown element "blank"
 
 [...]
 ````
+
+## Fixing the errors
+
+By [exposing](https://docs.docker.com/storage/bind-mounts/) the host
+socket `/var/run/dbus/system_bus_socket` to the container we remove
+the error.
+
+### Credits
+
+* The fix was inspired by the documentation of [x11docker](https://github.com/mviereck/x11docker)
+  https://github.com/mviereck/x11docker/wiki/How-to-connect-container-to-DBus-from-host
