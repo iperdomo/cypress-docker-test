@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  server:
+    image: nginx:1.17.7-alpine
+  e2e:
+    image: cypress/included:3.8.1
+    working_dir: /app
+    volumes:
+      - .:/app:delegated
+    depends_on:
+      - server
